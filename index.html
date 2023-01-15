@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geo Artist Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js%22%3E"></script>
+  <link rel="shortcut icon" type="image/png" href="2.png">
+
+</head>
+<body>
+  <app-root>
+  </app-root>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+
+
+
+</head>
+<body>
+
+    <header >
+
+        <div class="logo">
+            <div class="container-fluid">
+                <div class="container">
+                    <button id="GA">
+                        GA
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container-fluid">
+                <div class="container">
+                    <ol class="navul">
+                            <a href="#project">Project.</a>
+                            <a href="#about">About.</a>
+                           <a href="#contact">Contact.</a>
+                    </ol>
+                </div>
+            </div>
+        </nav>
+    <div class="headback">
+        <div class="container-fluid">
+            <div class="container">
+                <p>Georgian Adventures - Graffiti Art</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="kaci">
+               <a href="#project"><i class="fa-solid fa-chevron-down down"></i></a>
+            </div>
+        </div>
+       
+    </div>
+    </header>
+    <aside>
+        <div class="container-fluid">
+            <div class="container">
+                <h1 id="project">
+                    Project.
+                </h1> 
+            </div>
+        </div>
+        <div class='music-card playing'>
+            <div class='image1'><a href="tbilisi.html"><img src="old tbilisi/Fabrika-Tbilisi-Street-Art-26-copy-683x1024.jpg" alt=""></a></div>
+        
+
+            <div class='wave'></div>
+            <div class='wave'></div>
+            <div class='wave'></div>
+            
+            <div class='info'>
+              <h2 class='title'>Tbilisi</h2>
+              <div class='artist'>Georgia</div>
+            </div>
+            <!-- n2 -->   
+          </div>
+
+          <div class="n2music-card playing">
+            <div class='image2'><a href="batumi.html"><img src="batumi/50918006912_1862292ea6_b.jpg" alt=""></a></div>
+
+
+            <div class='wave'></div>
+            <div class='wave'></div>
+            <div class='wave'></div>
+            
+            <div class='info'>
+              <h2 class='title'>Batumi</h2>
+              <div class='artist'>Georgia</div>
+            </div>
+            </div>
+            
+          <!-- n3 -->
+          <div class="n3music-card playing">
+            <div class='image2'><a href="rustavi.html"><img src="rustavi/maxresdefault.jpg" alt=""></a></div>
+
+
+            <div class='wave'></div>
+            <div class='wave'></div>
+            <div class='wave'></div>
+            
+            <div class='info'>
+              <h2 class='title'>Rustavi</h2>
+              <div class='artist'>Georgia</div>
+            </div>
+            </div>
+
+          
+        <!-- slide -->
+    </aside>
+    <section> 
+
+    </section>
+    
+    <article>
+        <div class="container-fluid">
+            <div class="container">
+                <h1 id="about">About.</h1>
+                
+            </div>
+        </div>
+            <div class="container-fluid">
+                <div class="container">
+                    <p class="aboutP">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br>
+                        when an unknown printer took a galley of type and scrambled it to make a type <br>
+                        specimen book.
+                    </p>
+                </div>
+            </div>
+    </article>
+    <div class="post">
+
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                <h1 id="contact">
+                    Contact.
+                </h1>
+            </div>
+        </div>
+        
+
+    
+        <div class="inputs">
+            <label for="name">
+                Name*
+            </label>
+            <br>
+            <input type="text" class="nameinput"><br><br><br>
+    
+     
+    
+            <label for="name">
+                phone*
+            </label>
+            <br>
+            <input type="number" class="nameinput"><br><br><br>
+    
+     
+    
+            <label for="name">
+                Email*
+            </label>
+            <br>
+            <input type="email" class="nameinput"><br><br><br>
+    
+    
+            <label for="name">
+                message*
+            </label>
+            <br>
+            <input type="text" class="massageinput"><br>
+            <button class="sendbtn">Send</button>
+        </div>
+        
+
+        
+
+    </footer>
+
+</body>
+</html>
+</body>
+</html>
